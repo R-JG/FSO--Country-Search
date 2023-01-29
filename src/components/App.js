@@ -43,9 +43,6 @@ const App = () => {
         setUserSearch(event.target.value);
     };
 
-    console.log('Search result: ', searchResult);
-    console.log('Selected country: ', selectedCountry);
-
     return (
         <div className='App' >
             <header className='header' >

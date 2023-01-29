@@ -71,7 +71,7 @@ body {
   border-radius: 1em;
   list-style-type: none;
   cursor: pointer;
-  transition: 0.07s;
+  transition: background-color 0.03s ease-in;
 }
 
 .CountryListItem:hover {
