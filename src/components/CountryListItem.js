@@ -1,14 +1,15 @@
 import React from 'react';
 
 const CountryListItem = ({ 
-    name,
-    setUserSearch,
+    country,
+    setSelectedCountry,
 }) => {
+    
     return (
         <li 
             className='CountryListItem'
-            onClick={() => setUserSearch(name)} >
-            {name}
+            onClick={() => setSelectedCountry(country)} >
+            {country.name.common}
         </li>
     );
 };

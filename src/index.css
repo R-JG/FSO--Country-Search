@@ -80,4 +80,47 @@ body {
 
 .CountryInfo {
   color: var(--foreground-color);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.info--name {
+  margin-top: 0;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.country-flag {
+  width: 25%;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.info--region {
+  margin: 0;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.info--subregion {
+  margin: 0;
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
+.map-link {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+.info--capital {
+  margin: 0;
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+}
+
+.info--population {
+  margin: 0;
+  grid-column: 1 / 2;
+  grid-row: 5 / 6;
 }

@@ -56,11 +56,19 @@ const App = () => {
             </header>
             <main className='info-container' >
                 {(selectedCountry) 
-                    ? <CountryInfo name={selectedCountry.name.common} /> 
+                    ? <CountryInfo 
+                        name={selectedCountry.name.common}
+                        flagLink={selectedCountry.flags.svg}
+                        mapLink={selectedCountry.maps.googleMaps}
+                        region={selectedCountry.region}
+                        subregion={selectedCountry.subregion}
+                        capital={selectedCountry.capital[0]}
+                        population={selectedCountry.population} /> 
                     : searchResult.map(country => 
                         <CountryListItem 
-                            name={country.name.common} 
-                            setUserSearch={setUserSearch}
+                            key={country.name.common}
+                            country={country}
+                            setSelectedCountry={setSelectedCountry}
                         />)}
             </main>
         </div>
